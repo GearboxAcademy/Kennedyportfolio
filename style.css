@@ -4,7 +4,8 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
+    background-color: #f0f0f0; 
 }
 
 .sidebar{
@@ -16,10 +17,13 @@ body {
     top: 0;
     left: -250px;
     transition: left 0.3s ease-in-out;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar h1 {
     margin: 0;
+    font-size: 1.5rem;
+    padding: 1rem 0;
 }
 
 .sidebar nav ul {
@@ -35,6 +39,7 @@ body {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
+    transition: color 0.2s;
 }
 
 .menu-button {
@@ -44,9 +49,16 @@ body {
     cursor: pointer;
     padding: 1rem;
     font-size: 18px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 5px;
 }
 
-.menu-button {
+.menu-button:hover {
+    background-color: #555;
+}
+
+.menu-icon {
     margin-right: 8px;
 }
 
@@ -57,22 +69,31 @@ body {
 }
 
 .project {
+    background-color: #fff;
     border: 1px solid #ddd;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .project h3 {
-    margin-top: 0;
+    font-size: 1.2rem;
 }
 
 .project a {
     text-decoration: none;
-    color: #333;
-    background-color: #ddd;
+    color: #fff;
+    background-color: #333;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     display: inline-block;
+    margin-top: 1rem;
+    transition: backgroun-color 0.2s;
+}
+
+.project a:hover {
+    background-color: #555;
 }
 
 @media (max-width: 768px) {
